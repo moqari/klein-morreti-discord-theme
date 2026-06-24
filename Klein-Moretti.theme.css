@@ -5,101 +5,41 @@
 * @version 1.0.0
 * @description Lord of Mysteries inspired Discord theme featuring Klein Moretti and Amon.
 * @source https://github.com/moqari/klein-morreti-discord-theme
+*
+* Artwork: mrthersh
+* Inspired by Lord of Mysteries
+* Based on Kurumi Theme framework by Solta
   */
 
+@import url("https://so1ta.github.io/css/kurumi-base.css");
+
 :root {
---background-image: url("https://raw.githubusercontent.com/moqari/klein-morreti-discord-theme/main/theme.jpg");
+--background: url("https://raw.githubusercontent.com/moqari/klein-morreti-discord-theme/main/theme.jpg");
 
-```
---fool-red: #9b001f;
---fool-red-bright: #c4002b;
---abyss-black: #090909;
---shadow-black: #050505;
+--font: "Inter";
 
+--transparencyalpha: 0.75;
+--transparencycolor: 0,0,0;
+
+--messagetransparency: 0;
+--guildchanneltransparency: 0;
+--chatinputtransparency: 0;
+--memberlisttransparency: 0.3;
+
+--accentcolor: 155,0,31,0.8;
+}
+
+.theme-dark {
 --text-normal: #f5f5f5;
---text-muted: #b3b3b3;
+--text-muted: #b5b5b5;
+
 --header-primary: #ffffff;
---header-secondary: #d0d0d0;
+--channels-default: #c4002b;
+--header-secondary: #d4d4d4;
 
---background-primary: rgba(0, 0, 0, 0.45);
---background-secondary: rgba(0, 0, 0, 0.55);
---background-tertiary: rgba(0, 0, 0, 0.65);
-```
+--interactive-normal: #d6d6d6;
+--interactive-hover: #ffffff;
+--interactive-active: #ffffff;
 
-}
-
-/* Background */
-.appMount__51fd7,
-.bg__960e4 {
-background: var(--background-image) center center / cover no-repeat fixed !important;
-}
-
-/* Global transparency */
-.chat_f75fb0,
-.container__133bf,
-.sidebar_c48ade,
-.membersWrap_c8ffbb,
-.container_f369db {
-background: rgba(0, 0, 0, 0.35) !important;
-backdrop-filter: blur(8px);
-}
-
-/* Message area */
-.scrollerInner__059a5 {
-background: transparent !important;
-}
-
-/* Chat input */
-.form_f75fb0 {
-background: rgba(0, 0, 0, 0.45) !important;
-border-top: 1px solid rgba(155, 0, 31, 0.4);
-}
-
-/* Selected channel */
-.modeSelected__2ea32 {
-background: rgba(155, 0, 31, 0.25) !important;
-border-left: 3px solid var(--fool-red);
-}
-
-/* Hover channel */
-.modeSelected__2ea32:hover,
-.interactive__972a0:hover {
-background: rgba(155, 0, 31, 0.35) !important;
-}
-
-/* Buttons */
-.lookFilled__950dd {
-background: var(--fool-red) !important;
-}
-
-.lookFilled__950dd:hover {
-background: var(--fool-red-bright) !important;
-}
-
-/* Server icons */
-.wrapper__6e9f8:hover {
-box-shadow: 0 0 12px rgba(196, 0, 43, 0.7);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar-thumb {
-background: var(--fool-red);
-border-radius: 10px;
-}
-
-/* User popout */
-.userPopoutOuter_c69a7b,
-.root__49fc1 {
-background: rgba(0, 0, 0, 0.85) !important;
-border: 1px solid rgba(196, 0, 43, 0.35);
-}
-
-/* The Fool title */
-.wordmarkWindows__05c46::after {
-content: "THE FOOL";
-color: #c4002b;
-margin-left: 10px;
-letter-spacing: 4px;
-font-weight: 700;
-text-shadow: 0 0 10px rgba(196, 0, 43, 0.8);
+--background-modifier-accent: rgba(155, 0, 31, 0.25);
 }
